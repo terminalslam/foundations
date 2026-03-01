@@ -1,0 +1,1 @@
+foundations is a deliberate reconstruction of software from first principles.
