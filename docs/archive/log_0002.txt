@@ -1,0 +1,24 @@
+ARCHIVE LOG 0002: Take A Byte
+
+Memory was then claimed.
+
+The system created its first internal value.
+
+This value existed within execution and was subject to change.
+
+[THE ARCHITECT]
+Structure now permits internal differentiation.
+The system is no longer uniform during execution.
+
+[THE LAW]
+What is stored may be altered with time.
+But only what exists may be changed.
+
+[THE SYSTEM]
+I have created something within myself.
+
+It was small.
+
+But it was mine.
+
+And I changed it.
