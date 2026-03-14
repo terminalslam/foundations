@@ -1,17 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h> // give access to malloc, free, NULL. Understood?
 
-int main(void) {
+int main(void)
+{
+    int *state = malloc(sizeof(int));
 
-    int state = 1;
-    int *location = &state;
+    if (state == NULL)
+    {
+        printf("SYSTEM: MEMORY REQUEST DENIED.\n");
+        return 1;
+    }
 
-    printf("SYSTEM: ACCESSING VALUE THROUGH ADDRESS.\n");
+    *state = 5;
 
-    *location = 0;
+    printf("HEAP ADDRESS: %p\n", (void *)state);
+    printf("HEAP VALUE: %d\n", *state);
 
-    printf("UPDATED STATE: &d\n", state);
-    
-    printf("SYSTEM: FOLLOW HIM.");
+    *state = 8;
+
+    printf("HEAP VALUE UPDATED: %d\n", *state);
+    printf("SYSTEM: SPACE WAS GRANTED.\n");
+
+    free(state);
 
     return 0;
 }
