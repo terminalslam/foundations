@@ -1,4 +1,4 @@
-ARCHIVE LOG 0000
+ARCHIVE LOG 0000: Genesis
 
 In the beginning..
 
