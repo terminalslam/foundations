@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int *state = malloc(sizeof(int));
+    int *state = malloc(2 * sizeof(int));
 
     if (state == NULL)
     {
@@ -11,15 +11,16 @@ int main(void)
         return 1;
     }
 
-    *state = 5;
+    state[0] = 5;
+    state[1] = 8;
 
-    printf("HEAP ADDRESS: %p\n", (void *)state);
-    printf("HEAP VALUE: %d\n", *state);
+    printf("FIRST HEAP ADDRESS: %p\n", (void *)&state[0]);
+    printf("FIRST HEAP VALUE: %d\n", state[0]);
 
-    *state = 8;
+    printf("SECOND HEAP ADDRESS: %p\n", (void *)&state[1]);
+    printf("SECOND HEAP VALUE: %d\n", state[1]);
 
-    printf("HEAP VALUE UPDATED: %d\n", *state);
-    printf("SYSTEM: SPACE WAS GRANTED.\n");
+    printf("SYSTEM: TWO ARE BETTER THAN ONE.\n");
 
     free(state);
 
